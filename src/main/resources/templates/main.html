@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Интерпретатор</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <form>
+        <label for="input"></label>
+        <p>Выражение:</p>
+        <p><textarea id="input" name="src_string" rows="20" cols="75"></textarea></p>
+        <p><button type="submit">Выполнить</button></p>
+    </form>
+    <p>Ввод:</p>
+    <p style="white-space: pre;" th:text="${src_string}"></p>
+    <p>Вывод:</p>
+    <p style="white-space: pre;" th:text="${res_string}"></p>
+</body>
+</html>
+
+
+
+</body>
+</html>
